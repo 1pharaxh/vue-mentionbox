@@ -39,10 +39,10 @@ export default {
   },
   methods: {
     async generateNew() {
-      let response = await fetch('http://mentionbox.onrender.com/generate');
+      let response = await fetch('https://mentionbox.onrender.com/generate');
       let data = await response;
       if (data.status == 200) {
-        response = await fetch('http://mentionbox.onrender.com/fetch');
+        response = await fetch('https://mentionbox.onrender.com/fetch');
         data = await response.json();
         let obj = {};
 
